@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permainan Kata Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Permainan Tebak Kata</h1>
+        <p class="deskripsi">
+            Tebak kata berdasarkan petunjuk yang diberikan!
+        </p>
+
+        <div class="permainan">
+            <h2>Petunjuk:</h2>
+            <p id="petunjuk">Memuat petunjuk...</p>
+
+            <label for="jawaban">Masukkan jawabanmu:</label>
+            <input type="text" id="jawaban"
+                   placeholder="Ketik jawaban di sini"
+                   autocomplete="off">
+
+            <button onclick="periksaJawaban()">Periksa Jawaban</button>
+            <button onclick="kataBerikutnya()" class="berikutnya">
+                Kata Berikutnya
+            </button>
+
+            <p id="hasil"></p>
+            <p id="skor">Skor: 0</p>
+            <p id="nomor">Kata: 1</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
